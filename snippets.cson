@@ -1,0 +1,68 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+# Each scope (e.g. '.source.coffee' above) can only be declared once.
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+
+'.text.tex.latex':
+  'a1,...,an':
+    'prefix': 'aa'
+    'body': 'a_1,a_2,\\\\cdots,a_n'
+  'b1,...,bn':
+    'prefix': 'bb'
+    'body': 'b_1,b_2,\\\\cdots,b_n'
+  'c1,...,cn':
+    'prefix': 'cc'
+    'body': 'c_1,c_2,\\\\cdots,c_n'
+  'd1,...,dn':
+    'prefix': 'dd'
+    'body': 'd_1,d_2,\\\\cdots,d_n'
+  'e1,...,en':
+    'prefix': 'ee'
+    'body': 'e_1,e_2,\\\\cdots,e_n'
+  'x1,...,xn':
+    'prefix': 'xx'
+    'body': 'x_1,x_2,\\\\cdots,x_n'
+  'y1,...,yn':
+    'prefix': 'yy'
+    'body': 'y_1,y_2,\\\\cdots,y_n'
+  'z1,...,zn':
+    'prefix': 'zz'
+    'body': 'z_1,z_2,\\\\cdots,z_n'
+  'text bf':
+    'prefix': 'tbf'
+    'body': '\\\\textbf{$1}$0'
+  'text it':
+    'prefix': 'tit'
+    'body': '\\\\textit{$1}$0'
+  'equation system':
+    'prefix':'eqalign'
+    'body': '\\\\begin{equation$1}\n\t\\\\begin{aligned}\n\t\t$0\n\t\\\\end{aligned}\n\\\\end{equation$1}'
+  'Typical linear system':
+    'prefix': 'ax=b'
+    'body':"""
+    \\\\begin{equation}
+      \\\\begin{aligned}
+        a_{11}x_1+a_{12}x_2+\\\\cdots+a_{1n}x_n&=b1\\\\\\\\
+        a_{21}x_1+a_{22}x_2+\\\\cdots+a_{2n}x_n&=b2\\\\\\\\
+        \\\\cdots\\\\\\\\
+        a_{n1}x_1+a_{n2}x_2+\\\\cdots+a_{nn}x_n&=bn
+      \\\\end{aligned}
+    \\\\end{equation}
+    """
